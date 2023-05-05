@@ -1,0 +1,272 @@
+:root{
+    --color-logo: #BACB3B;
+    --color-text1: #894D1E;
+    --color-text2: #031D5B;
+    --color-busc: #B6BBC9;
+    --bcolor: #F1F5D8;
+    --fontsite:'Encode Sans', sans-serif;
+}
+html{
+    font-family: 'Encode Sans', sans-serif;
+}
+body{
+    margin: 0;
+    background: var(--bcolor);
+    height: 100vh;
+    position: relative;
+}
+
+header{
+    width: 100%;
+    height: 128px;
+}
+
+.headerdiv{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    color: var(--color-logo);
+}
+
+.imagen{
+    height: 232px;
+    width: 325px;
+    margin: auto;
+    background-image: url("assets/iPhonemockupheader.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--color-text1);
+    font-weight: bold;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenido{
+    width: 100%;
+}
+
+.contenidobuscador{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+
+.buscador{
+    width: 100%;
+}
+
+.buscador input{
+    border: 1px solid var(--color-logo);
+    border-radius: 5px;
+    padding: 0 0 0 10px;
+    width: 100%;
+    height: 48px;
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.buscador input ::placeholder{
+    font-size: 16px
+}
+
+.cancel{
+    position: absolute;
+    right: 55px;
+    top: 12px;
+}
+
+.linea{
+    position: absolute;
+    right: 44px;
+    top:12px;
+}
+
+.lupa{
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+
+.texto{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: var(--color-text2);
+}
+
+h1{
+    font-weight: 800;
+}
+
+.sub{
+    font-weight: 800;
+}
+
+.texto p{
+    font-weight: 300;
+}
+
+.check{
+    display: flex;
+    justify-content: flex-start;
+    width: 51%;
+
+}
+
+.check img{
+    width: 16px;
+
+}
+
+.check p{
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+.checks{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+button{
+    height: 60px;
+    width: 168px;
+    border-radius: 12px;
+    border-color: var(--color-logo);
+    background-color: var(--color-logo);
+    color: #F1F5D8;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    filter: drop-shadow(0px 5px 5px #282828b8);
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+}
+
+.rating p{
+    font-weight: 800;
+    margin-left: 5px;
+}
+
+footer{
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer p{
+   color: var(--color-busc);
+   margin-bottom: 0;
+}
+
+@media screen and (min-width: 320px) {
+
+    .check{
+        display: flex;
+        justify-content: center;
+        width: 32%;
+    }
+    
+    .check p{
+        font-weight: 800;
+        margin-left: 10px;
+    }
+    
+    .checks{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    } 
+    .rating{
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+   header{
+    width: 80%;
+    height: 128px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+   }
+
+
+   nav{
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-end;
+   }
+
+   nav a{
+    text-decoration: none;
+    margin: 0 10px;
+   }
+
+   main{
+    margin:auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    margin: 0 10px 0 0;
+    align-items: center;
+   }
+
+   .texto{
+    width: 80%;
+    margin: auto;
+    text-align: left;}
+
+   .imagen{
+    height: 500px;
+    width: 1126px;
+    display: flex;
+    justify-content: flex-end;
+   }
+
+   .checks{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    } 
+
+   button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 20px; 
+    }
+
+   
+
+   .rating {
+    display: flex;
+    justify-content: left;
+    float: left;
+    align-items: center;
+    }
+
+
+    }
